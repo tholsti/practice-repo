@@ -9,3 +9,24 @@ html {
   padding-top: 10vh;
   width: 50vw;
 }
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  display:flex;
+  flex-direction: row;
+  flex: 1 0 1;
+  justify-content: space-between;
+}
+
+.show-col {
+  flex: 1 0 1;
+  flex-grow: 1;
+}
