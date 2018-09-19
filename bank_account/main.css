@@ -1,0 +1,11 @@
+html {
+  
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  padding-top: 10vh;
+  width: 50vw;
+}

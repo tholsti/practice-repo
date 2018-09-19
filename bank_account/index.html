@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bank account terminal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  
+</head>
+<body>
+  <div class="container">
+    
+    <h1>Bank Account terminal</h1>
+    Please enter your bank account number:
+    <input id="acc_no" type="text" placeholder="Enter bank account number">
+    <br>
+    What type of action would you like to do?
+    <select name="action" id="action">
+      <option value="balance">View account balance</option>
+      <option value="transfer">Make a transfer to another account</option>
+    </select>
+    <br>
+    <button onclick="bank_function()">
+      Proceed
+    </button>
+    <br>
+    <p id="result">
+  
+    </p>
+    <script src="main.js"></script>
+  </div>
+</body>
+</html>
+
