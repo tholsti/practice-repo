@@ -1,5 +1,7 @@
-html {
-  
+.black {
+  background-color:black;
+  color:white;
+  transition: 2s;
 }
 
 .container {
@@ -8,15 +10,19 @@ html {
   align-content: center;
   padding-top: 10vh;
   width: 50vw;
+  transition: 2s;
+
 }
 
 .hidden {
   display: none;
+  transition: 2s;
 }
 
 .show {
   display: flex;
   flex-direction: column;
+  transition: 2s;
 }
 
 .column {
@@ -24,9 +30,11 @@ html {
   flex-direction: row;
   flex: 1 0 1;
   justify-content: space-between;
+  transition: 2s;
 }
 
 .show-col {
   flex: 1 0 1;
   flex-grow: 1;
+  transition: 2s;
 }

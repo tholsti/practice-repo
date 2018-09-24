@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.aside {
+  display: flex;
+  background-color: blue;
+  padding: 1rem;
+}
+
+.menu {
+  /* display: none; */
+  width: 0;
+  color: white;
+  overflow: none;
+  transition:.5s;
+}
+
+.show {
+  width: 15rem;
+  /* display: block; */
+  padding: 1rem;
+  transition:.5s;
+}
+
+.menu h1 {
+  padding-left: 1.5rem;
+}
+
+article {
+  width: 100vw;
+}
+
+article h1 {
+  text-align: center;
+}
+
+li {
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.credit-list {
+  text-align:center;
+}
+
+.app-container {
+  border: 1px solid;
+  padding:1rem;
+  margin:1rem;
+  border-radius: 2px;
+}
+
+.app-container button {
+  width:80%;
+}
+
+.app-container h2 {
+  text-align:center;
+  padding-bottom:1rem;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grocery-row {
+  display:flex;
+  flex-direction:row;
+}
+
+.item {
+  width: 10rem;
+}
+
+.input {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+}
