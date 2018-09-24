@@ -1,18 +1,31 @@
+<<<<<<< HEAD
+=======
+.black {
+  background-color:black;
+  color:white;
+  transition: 2s;
+}
+
+>>>>>>> 5f9f0489fb6cd3c5298672b745c108fdeeb8edb2
 .container {
   display:flex;
   flex-direction: column;
   align-content: center;
   padding-top: 10vh;
   width: 50vw;
+  transition: 2s;
+
 }
 
 .hidden {
   display: none;
+  transition: 2s;
 }
 
 .show {
   display: flex;
   flex-direction: column;
+  transition: 2s;
 }
 
 .column {
@@ -20,15 +33,20 @@
   flex-direction: row;
   flex: 1 0 1;
   justify-content: space-between;
+  transition: 2s;
 }
 
 .show-col {
   flex: 1 0 1;
   flex-grow: 1;
+<<<<<<< HEAD
   margin: 0 1em 0 1em;
 }
 
 .show-col input {
   width: 100%;
   
+=======
+  transition: 2s;
+>>>>>>> 5f9f0489fb6cd3c5298672b745c108fdeeb8edb2
 }
