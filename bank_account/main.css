@@ -1,7 +1,3 @@
-html {
-  
-}
-
 .container {
   display:flex;
   flex-direction: column;
@@ -29,4 +25,10 @@ html {
 .show-col {
   flex: 1 0 1;
   flex-grow: 1;
+  margin: 0 1em 0 1em;
+}
+
+.show-col input {
+  width: 100%;
+  
 }
