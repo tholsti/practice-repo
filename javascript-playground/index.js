@@ -47,7 +47,7 @@ let grocery = [
 function grocery_update() {
   let list = document.getElementById("list");
   list.innerHTML = `
-  <div class="grocery-row">
+  <div class="top-row grocery-row" id="grocery-row">
     <div style="opacity:0">X &nbsp </div>
     <div class="item"><b>ITEM</div>
     <div class="qty">QTY</b></div>
@@ -57,7 +57,7 @@ function grocery_update() {
     // let row-number = grocery.indexOf(item.item);
     list.innerHTML += (`
     <div class="grocery-row">
-    <div onclick="removeItem(${index})">
+    <div id="remove_btn" onclick="removeItem(${index})">
     <a href="#" class="remove">X</a> &nbsp</div> 
     <div class="item">${item.item}</div>
     &nbsp 
@@ -83,4 +83,12 @@ grocery_btn.addEventListener("click", () => {
     { item: item_input, qty: qty_input }
   );
   grocery_update();
+})
+
+let remove_btn = document.getElementById("remove_btn");
+remove_btn.addEventListener("mouseenter", () => {
+  remove_btn.classList.toggle("to-be-removed");
+})
+remove_btn.addEventListener("mouseleave", () => {
+  remove_btn.classList.toggle("to-be-removed");
 })
