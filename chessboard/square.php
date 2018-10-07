@@ -9,19 +9,28 @@ class square {
   public function __construct($x, $y, $piece=null){
       $this->x_coord = $x;
       $this->y_coord = $y;
-      $this->piece = $piece;
+      $this->piece = new piece($piece);
   }
 
-  public function isEven($num) {
-    if ($num % 2 === 0) return true;
-    else return false;
-  
-  
   protected function isDark() {
-    if ($this->x_coord === && $this->y_coord)
+    
+    if (isEven($this->x_coord) && isEven($this->y_coord)) {
+      return true;
+    }
+    elseif (!isEven($this->x_coord) && !isEven($this->y_coord)) {
+      return true;
+    } else return false;
+  }
+  
+  public function __toString()
+  {
+    return '<div class="' . ($this->isDark() ? 'dark' : 'light') . '">' . $this->piece . '</div>';
   }
   
 }
 
-}
 
+function isEven($num) {
+  if ($num % 2 === 0) return true;
+  else return false;
+}

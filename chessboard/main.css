@@ -1,3 +1,26 @@
 body {
   background-color: lightcyan;
 }
+
+.light {
+  display:flex;
+  flex-basis: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #ddd;
+}
+
+.dark {
+  display:flex;
+  flex-basis: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+ background-color: #222;
+}
+
+img {
+  }

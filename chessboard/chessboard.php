@@ -17,9 +17,28 @@ include "piece.php";
 </head>
 <body>
   <?php
-$king = new piece("K");
-// var_dump($king);
-echo $king;
+$black_king = new piece("k");
+// var_dump($black_king);
+echo $black_king; 
+
+$square = new square(1,0,"p");
+echo $square;
+// var_dump ($square);
+
+
+
+$a2 = new square(1, 2);
+$b2 = new square(2, 2, $white_queen);
+$c2 = new square(3, 2, $black_pawn);
+$d2 = new square(4, 2);
+echo $a2;
+echo $b2;
+echo $c2;
+echo $d2;
+
+$board = new board();
+echo $board;
+
 ?>
 </body>
 </html>
