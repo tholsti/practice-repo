@@ -13,15 +13,16 @@ class Pacman {
     this.color = color;
     this.direction = direction;
     this.gameplan = gp;
+    this.standingOnBomb = 0;
   }
 
   checkIfBomb() {
     const pacman = document.getElementById(`pacman-${this.name}`);
     if ((johnny.posX) === bomb.posX && (johnny.posY) === bomb.posY) {
-      alert("BOOOOOOOM");
+      console.log("BOOOOM");
       pacman.className = "pacman tombstone";
     }
-    
+
   }
 
   moveRight() {
@@ -80,7 +81,6 @@ class Pacman {
     pacman.style.left = this.posX + "px";
     pacman.style.top = this.posY + "px";
     pacman.className = `pacman pac-${this.color}-${this.direction + this.mouth}`;
-
   }
 }
 
@@ -95,6 +95,13 @@ class Bomb {
     this.posY = y * size;
   }
 }
+
+const bombs = [];
+bombs[0] = new Bomb;
+bombs[0].placeBomb(
+  (Math.floor(Math.random()*gameplan.width)),
+  (Math.floor(Math.random()*gameplan.height)
+  ));
 
 const bomb = new Bomb;
 bomb.placeBomb(2, 2);
